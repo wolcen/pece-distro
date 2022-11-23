@@ -1305,9 +1305,14 @@ function install_profile_info($profile, $locale = 'en') {
       'php' => DRUPAL_MINIMUM_PHP,
     );
     $info = drupal_parse_info_file("profiles/$profile/$profile.info") + $defaults;
+    $profile_dependencies = array();
+    foreach ($info['dependencies'] as $dependency) {
+      $dependency_data = drupal_parse_dependency($dependency);
+      $profile_dependencies[] = $dependency_data['name'];
+    }
     $info['dependencies'] = array_unique(array_merge(
       drupal_required_modules(),
-      $info['dependencies'],
+      $profile_dependencies,
       ($locale != 'en' && !empty($locale) ? array('locale') : array()))
     );
 
