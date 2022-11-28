@@ -1,3 +1,23 @@
+* PECE v1.45 (11/28/2022)
+
+System updates, new features, and bug fixes.
+
+Upgrades
+---
+- Upgrade Drupal core version to v7.92
+
+Bug fix
+---
+- Fix issues during PECE profile installation
+
+Features
+---
+- Add User Restrictions feature  
+
+Improvements
+---
+- Adjustments in the home page Recent Artifacts, Recent Essays, and Groups tabs 
+
 * PECE v1.44 (09/13/2022)
 
 System updates, new features and bug fixes.
