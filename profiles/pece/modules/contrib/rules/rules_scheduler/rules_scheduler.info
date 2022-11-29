@@ -1,6 +1,6 @@
 name = Rules Scheduler
 description = Schedule the execution of Rules components using actions.
-dependencies[] = rules:rules
+dependencies[] = rules
 package = Rules
 core = 7.x
 files[] = includes/rules_scheduler.handler.inc
