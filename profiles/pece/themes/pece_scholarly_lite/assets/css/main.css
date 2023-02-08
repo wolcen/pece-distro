@@ -728,7 +728,6 @@ html.remodal-is-locked {
 /* Fix iPad, iPhone glitches */
 .remodal-overlay,
 .remodal-wrapper {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 /* Necessary styles of the modal dialog */
@@ -2353,9 +2352,9 @@ body.uad a.edit-mini-panel-link {
     height: 70px;
     width: 70px;
     background-color: #7851A9;
-    content: "";
+    content: "";
     color: #eeeeee;
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     font-size: 2rem;
     line-height: 7rem;
     position: absolute;
@@ -2388,9 +2387,9 @@ body.uad a.edit-mini-panel-link {
     height: 70px;
     width: 70px;
     background-color: #7851A9;
-    content: "";
+    content: "";
     color: #eeeeee;
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     font-size: 2rem;
     line-height: 7rem;
     position: absolute;
@@ -2453,7 +2452,7 @@ body.uad a.edit-mini-panel-link {
   align-items: center;
   margin-right: 20px; }
   .view-pece-structured-analytics i::before {
-    content: '\f059';
+    content: '\f0f6';
     font-family: "FontAwesome";
     font-size: 18px; }
 
