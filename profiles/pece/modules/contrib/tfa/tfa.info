@@ -6,8 +6,8 @@ configure = admin/config/people/tfa
 files[] = tfa.inc
 files[] = tests/tfa.test
 
-; Information added by Drupal.org packaging script on 2020-11-19
-version = "7.x-2.1"
+; Information added by Drupal.org packaging script on 2022-11-26
+version = "7.x-2.3"
 core = "7.x"
 project = "tfa"
-datestamp = "1605786941"
+datestamp = "1669504626"
