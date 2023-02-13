@@ -756,7 +756,9 @@ abstract class RulesPlugin extends RulesExtendable {
         $state->addVariable($name, $args[$name], $info);
       }
       elseif (empty($info['optional']) && $info['type'] != 'hidden') {
-        throw new RulesEvaluationException('Argument %name is missing.', array('%name' => $name), $this, RulesLog::ERROR);
+        throw new RulesEvaluationException('Argument %name is missing.', array(
+          '%name' => $name,
+        ), $this, RulesLog::ERROR);
       }
     }
     return $state;
@@ -993,7 +995,9 @@ abstract class RulesPlugin extends RulesExtendable {
       $arg = $state->get($name);
     }
     elseif (empty($info['optional']) && $info['type'] != 'hidden') {
-      throw new RulesEvaluationException('Required parameter %name is missing.', array('%name' => $name), $this, RulesLog::ERROR);
+      throw new RulesEvaluationException('Required parameter %name is missing.', array(
+        '%name' => $name,
+      ), $this, RulesLog::ERROR);
     }
     else {
       $arg = isset($info['default value']) ? $info['default value'] : NULL;
@@ -1002,7 +1006,9 @@ abstract class RulesPlugin extends RulesExtendable {
     }
     // Make sure the given value is set if required (default).
     if (!isset($arg) && empty($info['allow null'])) {
-      throw new RulesEvaluationException('The provided argument for parameter %name is empty.', array('%name' => $name), $this);
+      throw new RulesEvaluationException('The provided argument for parameter %name is empty.', array(
+        '%name' => $name,
+      ), $this);
     }
 
     // Support passing already sanitized values.
@@ -2187,7 +2193,9 @@ abstract class RulesActionHandlerBase extends RulesPluginHandlerBase implements 
 class RulesAbstractPluginDefaults extends RulesPluginHandlerBase implements RulesPluginImplInterface {
 
   public function execute() {
-    throw new RulesEvaluationException($this->object->getPluginName() . ": Execution implementation is missing.", array(), $this->object, RulesLog::ERROR);
+    throw new RulesEvaluationException('@plugin_name: Execution implementation is missing.', array(
+      '@plugin_name' => $this->object->getPluginName(),
+    ), $this->object, RulesLog::ERROR);
   }
 
 }
