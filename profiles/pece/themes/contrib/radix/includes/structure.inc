@@ -190,6 +190,7 @@ function radix_table($variables) {
 function radix_status_messages($variables) {
   $display = $variables['display'];
   $output = '';
+  $close_label = t('Close');
 
   $status_heading = array(
     'status' => t('Status message'),
@@ -205,7 +206,10 @@ function radix_status_messages($variables) {
     $output .= "<div class=\"alert alert-$type alert-dismissable\">\n";
 
     // Add a close button.
-    $output .= '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+    $output .= '<button type="button" class="close" data-dismiss="alert"';
+    $output .= '<span aria-hidden="true">&times;</span>';
+    $output .= '<span class="sr-only">' . $close_label . '</span>';
+    $output .= '</button>';
 
     if (!empty($status_heading[$type])) {
       $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
