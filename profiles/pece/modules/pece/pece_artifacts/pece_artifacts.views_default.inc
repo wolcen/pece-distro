@@ -42,7 +42,7 @@ function pece_artifacts_views_default_views() {
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['label'] = 'No results';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'No artifacts are available.';
+  $handler->display->display_options['empty']['area']['content'] = 'No articles are available.';
   $handler->display->display_options['empty']['area']['format'] = 'panopoly_wysiwyg_text';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -107,7 +107,7 @@ function pece_artifacts_views_default_views() {
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['label'] = 'No results';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'No artifacts are available.';
+  $handler->display->display_options['empty']['area']['content'] = 'No articles are available.';
   $handler->display->display_options['empty']['area']['format'] = 'panopoly_wysiwyg_text';
   $translatables['pece_recent_artifacts'] = array(
     t('Master'),
@@ -119,7 +119,7 @@ function pece_artifacts_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('No results'),
-    t('No artifacts are available.'),
+    t('No articles are available.'),
     t('Content pane'),
     t('View panes'),
     t('Artifacts front pane'),

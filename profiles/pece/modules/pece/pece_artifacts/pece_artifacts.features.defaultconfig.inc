@@ -76,8 +76,8 @@ function pece_artifacts_defaultconfig_strongarm() {
       'required' => 0,
     ),
     'biblio' => array(
+      'enabled' => 0,
       'default' => '',
-      'enabled' => 1,
       'max' => '',
       'required' => 0,
       'action_type' => '1',
