@@ -1,3 +1,43 @@
+* PECE v1.47 (04/09/2023)
+
+System updates, new features, and bug fixes.
+
+Upgrades
+---
+- Upgrade Drupal core version to v7.97
+
+Bug fix
+---
+- Fix issues during PECE profile installation
+
+* PECE v1.46 (02/16/2023)
+
+System updates and bug fixes.
+
+Upgrades
+---
+- Upgrade Drupal core version to v7.94
+- Upgrade Media module to v2.30
+- Upgrade Views module to v3.28
+- Upgrade Language Field module to v1.8
+- Upgrade Entity Reference module to v1.6
+- Upgrade Feeds module to v2.0-beta6
+- Upgrade GMap module to v2.12
+- Upgrade L10n Update module to v2.12
+- Upgrade Media Youtube module to v2.12
+- Upgrade Panels module to v3.11
+- Upgrade Views Bulk Operations module to v3.7
+- Upgrade SMTP module to v1.9
+- Upgrade Tagclouds module to v1.13
+
+Bug fix
+---
+- Fix Rules dependencies issues during PECE profile installation
+
+Improvements
+---
+- PHP 8 compatibility improvements
+
 * PECE v1.45 (11/28/2022)
 
 System updates, new features, and bug fixes.
@@ -12,11 +52,11 @@ Bug fix
 
 Features
 ---
-- Add User Restrictions feature  
+- Add User Restrictions feature
 
 Improvements
 ---
-- Adjustments in the home page Recent Artifacts, Recent Essays, and Groups tabs 
+- Adjustments in the home page Recent Artifacts, Recent Essays, and Groups tabs
 
 * PECE v1.44 (09/13/2022)
 
