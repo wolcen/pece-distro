@@ -273,8 +273,9 @@ projects[tfa][subdir] = contrib
 projects[tfa][version] = 2.3
 
 # 2FA Plugins
-projects[tfa_basic][subdir] = contrib
 projects[tfa_basic][version] = 1.1
+projects[tfa_basic][subdir] = contrib
+;projects[tfa_basic][patch][3310662] = https://www.drupal.org/files/issues/2022-09-20/tfa_basic-3310662-2.patch
 
 ; Password Policy
 projects[password_policy][subdir] = contrib
@@ -461,7 +462,7 @@ projects[pack_upload][subdir] = contrib
 ; =====================
 
 ; Overrides Panopoly's date.
-projects[date][version] =  2.12
+projects[date][version] =  2.14
 projects[date][subdir] = contrib
 
 ; Overrides Panopoly's link.
