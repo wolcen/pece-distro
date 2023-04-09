@@ -728,6 +728,7 @@ html.remodal-is-locked {
 /* Fix iPad, iPhone glitches */
 .remodal-overlay,
 .remodal-wrapper {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 /* Necessary styles of the modal dialog */
