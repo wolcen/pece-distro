@@ -16,9 +16,8 @@ files[] = tests/src/FeedsPreviewImportFormPreviewTest.test
 files[] = tests/src/FeedsPreviewTestCase.test
 files[] = tests/src/FeedsPreviewNoImportTest.test
 
-; Information added by Drupal.org packaging script on 2017-02-18
+; Information added by Drupal.org packaging script on 2023-04-18
 version = "7.x-1.x-dev"
 core = "7.x"
 project = "feedspreview"
-datestamp = "1487418190"
-
+datestamp = "1681823427"
