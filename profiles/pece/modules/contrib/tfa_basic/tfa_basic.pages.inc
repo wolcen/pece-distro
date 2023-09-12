@@ -563,7 +563,7 @@ function tfa_basic_setup_form_submit($form, &$form_state) {
 
   // Cancel button.
   if (isset($form_state['values']['cancel']) && $form_state['values']['op'] === $form_state['values']['cancel']) {
-    drupal_set_message('TFA setup canceled.');
+    drupal_set_message(t('TFA setup canceled.'));
     $form_state['redirect'] = 'user/' . $account->uid . '/security/tfa';
     return;
   }

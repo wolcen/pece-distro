@@ -300,7 +300,7 @@ class TfaTrustedBrowserSetup extends TfaTrustedBrowser implements TfaSetupPlugin
       foreach ($form_state['values']['existing'] as $element => $value) {
         $id = str_replace('trusted_browser_', '', $element);
         if (!$value) {
-          $this->deleteTrusted($id);
+          $this->deleteTrusted((int) $id);
           $count++;
         }
       }

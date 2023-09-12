@@ -121,7 +121,7 @@ class TfaBasicTestCase extends DrupalWebTestCase {
 
     // Store codes.
     $result = $this->xpath('//li');
-    while (list(, $node) = each($result)) {
+    foreach ($result as $node) {
       $this->recoveryCodes[] = (string) $node;
     }
     $this->drupalPost(NULL, array(), 'Save');
@@ -267,6 +267,7 @@ class TfaBasicTestCase extends DrupalWebTestCase {
 
     // Set expire time and run cron to delete saved code to log in.
     variable_set('tfa_basic_accepted_code_expiration', '0');
+    sleep(1);
     $this->cronRun();
     $code_form = array(
       'code' => $code,
