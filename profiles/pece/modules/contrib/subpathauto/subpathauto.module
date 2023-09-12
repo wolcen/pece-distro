@@ -69,8 +69,9 @@ function subpathauto_url_outbound_alter(&$path, $options, $original_path) {
  *   Either a Drupal system path, an aliased path, or FALSE if no path was
  *   found.
  */
-function subpathauto_lookup_subpath($action, $path = '', $original_path, $path_language = NULL) {
+function subpathauto_lookup_subpath($action, $path, $original_path, $path_language = NULL) {
   global $language_url;
+  $path = isset($path) ? $path : '';
 
   // Use the advanced drupal_static() pattern, since this is called very often.
   static $drupal_static_fast;
