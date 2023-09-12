@@ -77,7 +77,7 @@ function location_map_link($location = array(), $link_text = 'See map: ') {
     }
   }
   if (count($links)) {
-    return '<div class="location map-link">' . t($link_text) . implode($links, ", ") . '</div>';
+    return '<div class="location map-link">' . t($link_text) . implode(", ", $links) . '</div>';
   }
   else {
     return NULL;
