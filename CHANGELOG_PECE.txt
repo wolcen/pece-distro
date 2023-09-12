@@ -1,3 +1,20 @@
+* PECE v1.48 (09/13/2023)
+
+System updates and bug fixes.
+
+Upgrades
+---
+- Upgrade Drupal core version to v7.98
+- Upgrade Search API module to v1.28
+- Upgrade Radix theme to v3.8+4-dev
+- Upgrade TFA Basic module to v1.2
+
+Bug fix
+---
+- Fix PHP 8+ compatibility issues on Subpathauto module.
+- Fix PHP 8+ compatibility issues on ECK module.
+- Fix PHP 7.4+ deprecated  and  parameters ordering for implode() in Location module.
+
 * PECE v1.47 (04/29/2023)
 
 System updates, new features, and bug fixes.
