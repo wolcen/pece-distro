@@ -1,11 +1,10 @@
-* PECE v1.48 (09/13/2023)
+* PECE v1.48 (10/04/2023)
 
 System updates and bug fixes.
 
 Upgrades
 ---
 - Upgrade Drupal core version to v7.98
-- Upgrade Search API module to v1.28
 - Upgrade Radix theme to v3.8+4-dev
 - Upgrade TFA Basic module to v1.2
 
